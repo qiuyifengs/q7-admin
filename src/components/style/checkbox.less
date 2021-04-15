@@ -1,0 +1,125 @@
+@import './themes/default';
+
+.q7-checkbox {
+  vertical-align: middle;
+
+  &__bg {
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    border: 2px solid currentColor;
+    border-radius: 2px;
+  }
+
+  &__native {
+    width: 1px;
+    height: 1px;
+  }
+
+  &__svg {
+    color: #fff
+  }
+
+  &__truthy {
+    stroke: currentColor;
+    stroke-width: 3.12px;
+    stroke-dashoffset: 29.78334;
+    stroke-dasharray: 29.78334;
+  }
+
+  &__indet {
+    fill: currentColor;
+    transform-origin: 50% 50%;
+    transform: rotate(-280deg) scale(0);
+  }
+
+  &__inner {
+    font-size: 40px;
+    width: 1em;
+    min-width: 1em;
+    height: 1em;
+    outline: 0;
+    border-radius: 50%;
+    color: rgba(0,0,0,.54);
+
+
+    &--truthy, &--indet {
+      color: @primary-color;
+      .q7-checkbox__bg {
+        background: currentColor
+      }
+    }
+
+    &--truthy {
+      path {
+        stroke-dashoffset: 0;
+        transition: stroke-dashoffset .18s cubic-bezier(.4,0,.6,1) 0ms
+      }
+    }
+
+    &--indet {
+      .q7-checkbox__indet {
+        transform: rotate(0) scale(1);
+      }
+    }
+  }
+
+  &.disabled {
+    opacity: .75 !important
+  }
+
+  &--dense {
+    .q7-checkbox__inner {
+      width: .4em;
+      min-width: .4em;
+      height: .4em
+    }
+
+    .q7-checkbox__bg {
+      left: 5%;
+      top: -5%;
+      width: 90%;
+      height: 90%;
+    }
+
+    .q7-checkbox__label {
+      padding-left: .5em
+    }
+
+    &.reverse .q-checkbox__label {
+      padding-left: 0;
+      padding-right: .5em
+    }
+  }
+}
+
+.q7-checkbox:not(.disabled) {
+  .q7-checkbox__inner:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
+    opacity: .12;
+    transform: scale3d(0, 0, 1);
+  }
+
+  &:focus,
+  &:hover {
+    .q7-checkbox__inner:before {
+      transform: scale3d(1, 1, 1)
+    }
+  }
+}
+
+.q-checkbox--dense:not(.disabled) {
+  &:focus,
+  &:hover {
+    .q-checkbox__inner:before {
+      transform: scale3d(1.4, 1.4, 1)
+    }
+  }
+}

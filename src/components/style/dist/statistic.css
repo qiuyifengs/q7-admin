@@ -1,0 +1,24 @@
+.q7-statistic-title {
+  margin-bottom: 4px;
+  color: rgba(0, 0, 0, 0.45);
+  font-size: 14px;
+}
+.q7-statistic-content {
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 24px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+.q7-statistic-content-value-decimal {
+  font-size: 16px;
+}
+.q7-statistic-content-prefix,
+.q7-statistic-content-suffix {
+  display: inline-block;
+}
+.q7-statistic-content-prefix {
+  margin-right: 4px;
+}
+.q7-statistic-content-suffix {
+  margin-left: 4px;
+  font-size: 16px;
+}

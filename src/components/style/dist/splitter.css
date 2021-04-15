@@ -1,0 +1,56 @@
+.q7-splitter__panel {
+  position: relative;
+  z-index: 0;
+}
+.q7-splitter__panel > .q7-splitter {
+  width: 100%;
+  height: 100%;
+}
+.q7-splitter__separator {
+  background-color: rgba(0, 0, 0, 0.12);
+  user-select: none;
+  position: relative;
+  z-index: 1;
+}
+.q7-splitter__separator-area > * {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.q7-splitter--vertical > .q7-splitter__panel {
+  height: 100%;
+}
+.q7-splitter--vertical.q7-splitter--active {
+  cursor: col-resize;
+}
+.q7-splitter--vertical > .q7-splitter__separator {
+  width: 1px;
+}
+.q7-splitter--vertical > .q7-splitter__separator > div {
+  left: -6px;
+  right: -6px;
+}
+.q7-splitter--vertical.q7-splitter--workable > .q7-splitter__separator {
+  cursor: col-resize;
+}
+.q7-splitter--horizontal > .q7-splitter__panel {
+  width: 100%;
+}
+.q7-splitter--horizontal.q7-splitter--active {
+  cursor: row-resize;
+}
+.q7-splitter--horizontal > .q7-splitter__separator {
+  height: 1px;
+}
+.q7-splitter--horizontal > .q7-splitter__separator > div {
+  top: -6px;
+  bottom: -6px;
+}
+.q7-splitter--horizontal.q7-splitter--workable > .q7-splitter__separator {
+  cursor: row-resize;
+}
+.q7-splitter__before,
+.q7-splitter__after {
+  overflow: auto;
+}

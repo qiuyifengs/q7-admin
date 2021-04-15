@@ -1,0 +1,93 @@
+.q7-checkbox {
+  vertical-align: middle;
+}
+.q7-checkbox__bg {
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  border: 2px solid currentColor;
+  border-radius: 2px;
+}
+.q7-checkbox__native {
+  width: 1px;
+  height: 1px;
+}
+.q7-checkbox__svg {
+  color: #fff;
+}
+.q7-checkbox__truthy {
+  stroke: currentColor;
+  stroke-width: 3.12px;
+  stroke-dashoffset: 29.78334;
+  stroke-dasharray: 29.78334;
+}
+.q7-checkbox__indet {
+  fill: currentColor;
+  transform-origin: 50% 50%;
+  transform: rotate(-280deg) scale(0);
+}
+.q7-checkbox__inner {
+  font-size: 40px;
+  width: 1em;
+  min-width: 1em;
+  height: 1em;
+  outline: 0;
+  border-radius: 50%;
+  color: rgba(0, 0, 0, 0.54);
+}
+.q7-checkbox__inner--truthy,
+.q7-checkbox__inner--indet {
+  color: #1890ff;
+}
+.q7-checkbox__inner--truthy .q7-checkbox__bg,
+.q7-checkbox__inner--indet .q7-checkbox__bg {
+  background: currentColor;
+}
+.q7-checkbox__inner--truthy path {
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 0.18s cubic-bezier(0.4, 0, 0.6, 1) 0ms;
+}
+.q7-checkbox__inner--indet .q7-checkbox__indet {
+  transform: rotate(0) scale(1);
+}
+.q7-checkbox.disabled {
+  opacity: 0.75 !important;
+}
+.q7-checkbox--dense .q7-checkbox__inner {
+  width: 0.5em;
+  min-width: 0.5em;
+  height: 0.5em;
+}
+.q7-checkbox--dense .q7-checkbox__bg {
+  left: 5%;
+  top: 5%;
+  width: 90%;
+  height: 90%;
+}
+.q7-checkbox--dense .q7-checkbox__label {
+  padding-left: 0.5em;
+}
+.q7-checkbox--dense.reverse .q-checkbox__label {
+  padding-left: 0;
+  padding-right: 0.5em;
+}
+.q7-checkbox:not(.disabled) .q7-checkbox__inner:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  opacity: 0.12;
+  transform: scale3d(0, 0, 1);
+}
+.q7-checkbox:not(.disabled):focus .q7-checkbox__inner:before,
+.q7-checkbox:not(.disabled):hover .q7-checkbox__inner:before {
+  transform: scale3d(1, 1, 1);
+}
+.q-checkbox--dense:not(.disabled):focus .q-checkbox__inner:before,
+.q-checkbox--dense:not(.disabled):hover .q-checkbox__inner:before {
+  transform: scale3d(1.4, 1.4, 1);
+}

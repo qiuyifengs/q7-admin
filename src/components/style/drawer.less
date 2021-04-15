@@ -1,0 +1,34 @@
+@import './themes/default';
+
+.q7-body--drawer-toggle {
+  overflow-x: hidden !important;
+}
+
+.q7-drawer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: 1000;
+
+  &--on-top {
+    z-index: @z-fixed-drawer;
+  }
+
+  &--left {
+    left: 0;
+    transform: translateX(-100%);
+
+    &.q7-drawer--bordered {
+      border-right: @layout-border;
+    }
+    .q7-layout__shadow {
+      left: 10px;
+      right: -10px;
+      
+      &::after {
+        right: 10px
+      }
+    }
+  }
+}

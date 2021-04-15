@@ -1,0 +1,38 @@
+
+@import './themes/default';
+
+.q7-badge {
+  background-color: @primary-color;
+  color: #fff;
+  padding: 2px;
+  border-radius: @border-radius-base;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: normal;
+  vertical-align: baseline;
+
+  &--single-line {
+    white-space: nowrap;
+  }
+
+  &--multi-line {
+    word-break: break-all;
+    word-wrap: break-word;
+  }
+
+  &-floating {
+    position: absolute;
+    top: -4px;
+    right: -3px;
+    cursor: inherit;
+  }
+
+  &--transparent {
+    opacity: .8;
+  }
+
+  &--outline {
+    background-color: transparent;
+    border: 1px solid currentColor;
+  }
+}

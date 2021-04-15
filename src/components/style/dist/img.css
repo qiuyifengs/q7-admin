@@ -1,0 +1,23 @@
+.q7-img {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.q7-img__loading .q7-spinner {
+  font-size: 50px;
+}
+.q7-img__image {
+  border-radius: inherit;
+  background-repeat: no-repeat;
+}
+.q7-img__content {
+  overflow: hidden;
+  border-radius: inherit;
+}
+.q7-img__content > div {
+  position: absolute;
+  padding: 16px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.47);
+}

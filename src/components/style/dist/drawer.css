@@ -1,0 +1,27 @@
+.q7-body--drawer-toggle {
+  overflow-x: hidden !important;
+}
+.q7-drawer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: 1000;
+}
+.q7-drawer--on-top {
+  z-index: 3000;
+}
+.q7-drawer--left {
+  left: 0;
+  transform: translateX(-100%);
+}
+.q7-drawer--left.q7-drawer--bordered {
+  border-right: 1px solid #d9d9d9;
+}
+.q7-drawer--left .q7-layout__shadow {
+  left: 10px;
+  right: -10px;
+}
+.q7-drawer--left .q7-layout__shadow::after {
+  right: 10px;
+}

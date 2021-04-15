@@ -1,0 +1,119 @@
+.q7-descriptions-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.q7-descriptions-title {
+  flex: auto;
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.5715;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.q7-descriptions-extra {
+  margin-left: auto;
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 14px;
+}
+.q7-descriptions-view {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 2px;
+}
+.q7-descriptions-view table {
+  width: 100%;
+  table-layout: fixed;
+}
+.q7-descriptions-row > th,
+.q7-descriptions-row > td {
+  padding-bottom: 16px;
+}
+.q7-descriptions-row:last-child {
+  border-bottom: none;
+}
+.q7-descriptions-item-label {
+  color: #999;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.5715;
+  text-align: start;
+}
+.q7-descriptions-item-label::after {
+  content: ':';
+  position: relative;
+  top: -0.5px;
+  margin: 0 8px 0 2px;
+}
+.q7-descriptions-item-label.q7-descriptions-item-no-colon::after {
+  content: ' ';
+}
+.q7-descriptions-item-no-label::after {
+  margin: 0;
+  content: '';
+}
+.q7-descriptions-item-content {
+  display: table-cell;
+  flex: 1;
+  color: #333;
+  font-size: 14px;
+  line-height: 1.5715;
+  overflow-wrap: break-word;
+  font-weight: 500;
+}
+.q7-descriptions-item {
+  padding-bottom: 0;
+  vertical-align: top;
+}
+.q7-descriptions-item > span {
+  display: inline-flex;
+  align-items: baseline;
+}
+.q7-descriptions-item-container {
+  display: flex;
+}
+.q7-descriptions-middle .q7-descriptions-row > th,
+.q7-descriptions-middle .q7-descriptions-row > td {
+  padding-bottom: 12px;
+}
+.q7-descriptions-small .q7-descriptions-row > th,
+.q7-descriptions-small .q7-descriptions-row > td {
+  padding-bottom: 8px;
+}
+.q7-descriptions-bordered .q7-descriptions-view {
+  border: 1px solid #f0f0f0;
+}
+.q7-descriptions-bordered .q7-descriptions-view > table {
+  table-layout: auto;
+}
+.q7-descriptions-bordered .q7-descriptions-item-label,
+.q7-descriptions-bordered .q7-descriptions-item-content {
+  padding: 16px 24px;
+  border-right: 1px solid #f0f0f0;
+}
+.q7-descriptions-bordered .q7-descriptions-item-label:last-child,
+.q7-descriptions-bordered .q7-descriptions-item-content:last-child {
+  border-right: none;
+}
+.q7-descriptions-bordered .q7-descriptions-item-label {
+  background-color: #fafafa;
+}
+.q7-descriptions-bordered .q7-descriptions-item-label::after {
+  display: none;
+}
+.q7-descriptions-bordered .q7-descriptions-row {
+  border-bottom: 1px solid #f0f0f0;
+}
+.q7-descriptions-bordered .q7-descriptions-row:last-child {
+  border-bottom: none;
+}
+.q7-descriptions-bordered.q7-descriptions-middle .q7-descriptions-item-label,
+.q7-descriptions-bordered.q7-descriptions-middle .q7-descriptions-item-content {
+  padding: 12px 24px;
+}
+.q7-descriptions-bordered.q7-descriptions-small .q7-descriptions-item-label,
+.q7-descriptions-bordered.q7-descriptions-small .q7-descriptions-item-content {
+  padding: 8px 16px;
+}

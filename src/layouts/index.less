@@ -1,0 +1,228 @@
+.hy-pro-basicLayout {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.hy-layout {
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  min-height: 0;
+  background-color: #f0f2f5;
+  box-sizing: border-box;
+}
+
+.hy-layout.hy-layout-has-sider {
+  flex-direction: row;
+}
+
+.hy-layout-sider {
+  position: relative;
+  min-width: 0;
+  background-color: #001529;
+  transition: all .2s
+}
+
+.hy-layout-sider-light {
+  background-color: #fff;
+}
+
+.hy-layout-sider-dark {
+  background-color: #001529;
+}
+
+.hy-pro-sider {
+  position: relative;
+  background-color: #001529;
+  border-right: 0;
+  transition: background-color .3s;
+}
+
+.hy-pro-sider-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  height: 100%;
+  overflow: auto;
+  overflow-x: hidden;
+  box-shadow: 2px 0 8px 0 rgba(29, 35, 41, .05);
+}
+
+.hy-layout-sider-light {
+  background-color: #fff;
+  box-shadow: 2px 0 8px 0 rgba(29, 35, 41, .05);
+}
+
+.hy-layout-sider-children {
+  height: 100%;
+  margin-top: -.1px;
+  padding-top: .1px;
+}
+
+.hy-pro-sider .hy-layout-sider-children {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.hy-pro-sider-logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 48px;
+  line-height: 48px;
+  cursor: pointer;
+  background-color: #1890ff;
+}
+
+.hy-pro-sider-logo>a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 32px;
+}
+
+.hy-pro-sider-logo img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.hy-pro-sider-logo h1 {
+  display: inline-block;
+  height: 32px;
+  margin: 0 0 0 12px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  vertical-align: middle;
+  animation: fade-in;
+  animation-duration: 0s;
+  animation-duration: .2s;
+}
+
+.hy-pro-sider-light .hy-pro-sider-logo h1 {
+  color: #fff;
+}
+
+// .hy-pro-sider.hy-layout-sider-collapsed .hy-pro-sider-logo {
+// }
+
+.hy-layout-header {
+  height: 48px;
+  line-height: 48px;
+  padding: 0 50px;
+  color: #fff;
+  background: #001529;
+}
+
+.hy-pro-basicLayout .hy-layout-header.hy-pro-fixed-header {
+  position: fixed;
+  top: 0
+}
+
+.hy-pro-global-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  box-shadow: 10px 4px 10px rgba(0,0,0,0.2);
+}
+
+.hy-pro-global-header>* {
+  height: 100%;
+}
+
+.hy-pro-components-global-header-index-right {
+  height: 48px;
+  margin-left: auto;
+  overflow: hidden;
+  display: flex;
+}
+
+.hy-pro-components-global-header-index-right .hy-pro-components-global-header-index-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 6px;
+  cursor: pointer;
+  transition: all .3s;
+
+  &:hover {
+    background-color: hsla(0, 0%, 100%, 0.18);
+  }
+}
+
+.hy-layout.hy-layout-has-sider>.hy-layout,
+.hy-layout.ant-layout-has-sider>.hy-layout-content {
+  overflow-x: hidden;
+}
+
+.hy-pro-basicLayout-content {
+  position: relative;
+  margin: 24px;
+}
+
+.hy-layout-content {
+  flex: auto;
+  min-height: 0;
+}
+
+.hy-pro-basicLayout-content .hy-pro-page-container {
+  margin: -24px -24px 0;
+}
+
+.hy-page-header {
+  box-sizing: border-box;
+  margin: 0;
+  color: rgba(0, 0, 0, .85);
+  font-size: 14px;
+  line-height: 1.5715;
+  list-style: none;
+  position: relative;
+  padding: 0 24px;
+  background-color: white;
+}
+
+.hy-page-header.has-breadcrumb {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.hy-pro-grid-content {
+  width: 100%;
+}
+
+.hy-pro-page-container-children-content {
+  margin: 24px 24px 0;
+}
+
+// card
+.el-tabs--card>.el-tabs__header .el-tabs__item.is-active {
+  border: none;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-color: white;
+}
+
+.el-tabs--card>.el-tabs__header .el-tabs__item {
+  background-color: #fafafa;
+  margin-right: 4px;
+  border: none;
+}
+
+.el-tabs--card>.el-tabs__header .el-tabs__nav {
+  border: none;
+}
+
+.el-tabs--card>.el-tabs__header {
+  border-bottom: none;
+}
+
+.el-tabs__nav-wrap {
+  margin: 0
+}

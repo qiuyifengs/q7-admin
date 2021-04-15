@@ -1,0 +1,22 @@
+.q7-avatar {
+  position: relative;
+  vertical-align: middle;
+  display: inline-block;
+  border-radius: 50%;
+  font-size: 48px;
+  height: 1em;
+  width: 1em;
+}
+.q7-avatar__content {
+  font-size: 0.5em;
+  line-height: 0.5em;
+}
+.q7-avatar__content,
+.q7-avatar img:not(.q-icon) {
+  border-radius: inherit;
+  height: inherit;
+  width: inherit;
+}
+.q7-avatar--square {
+  border-radius: 0;
+}

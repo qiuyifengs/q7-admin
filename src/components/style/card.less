@@ -1,0 +1,128 @@
+.q7-card {
+  box-shadow: 0 1px 5px rgba(0,0,0,0.2), 0 2px 2px rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12);
+  border-radius: 4px;
+  vertical-align: top;
+  background: #fff;
+  position: relative;
+  padding: 12px;
+  margin: 12px;
+
+  // > div,
+  // > img {
+  //   &:first-child {
+  //     border-top: 0;
+  //     border-top-left-radius: inherit;
+  //     border-top-right-radius: inherit;
+  //   }
+  // }
+
+  // > div,
+  // > img {
+  //   &:last-child {
+  //     border-bottom: 0;
+  //     border-bottom-left-radius: inherit;
+  //     border-bottom-right-radius: inherit;
+  //   }
+  // }
+
+  // > div,
+  // > img {
+  //   &:not(:first-child) {
+  //     border-top-left-radius: 0;
+  //     border-top-right-radius: 0;
+  //   }
+  // }
+
+  // > div,
+  // > img {
+  //   &:not(:last-child) {
+  //     border-bottom-left-radius: 0;
+  //     border-bottom-right-radius: 0;
+  //   }
+  // }
+
+  // > div {
+  //   border-left: 0;
+  //   border-right: 0;
+  //   box-shadow: none;
+  // }
+
+  &--bordered {
+    border: 1px solid rgba(0,0,0,0.12)
+  }
+
+  &__section {
+    position: relative;
+
+    &--vert {
+      padding: 16px
+    }
+
+    &--horiz {
+      > div,
+      > img {
+        &:first-child {
+          border-top-left-radius: inherit;
+          border-bottom-left-radius: inherit;
+        }
+        &:last-child {
+          border-top-right-radius: inherit;
+          border-bottom-right-radius: inherit;
+        }
+        &:not(:first-child) {
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+        }
+        &:not(:last-child) {
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+        }
+      }
+
+      > div {
+        border-top: 0;
+        border-bottom: 0;
+        box-shadow: none;
+      }
+    }
+  }
+
+  &__actions {
+    padding: 8px;
+    align-items: center;
+
+    .q7-btn__wrapper {
+      padding: 0 8px;
+    }
+
+    &--horiz {
+      > .q7-btn-item + .q7-btn-item,
+      > .q7-btn-group + .q7-btn-item,
+      > .q7-btn-item + .q7-btn-group {
+        margin-left: 8px;
+      }
+    }
+
+    &--vert {
+      > .q7-btn-item.q7-btn--round {
+        align-self: center
+      }
+      > .q7-btn-item + .q7-btn-item,
+      > .q7-btn-group + .q7-btn-item,
+      > .q7-btn-item + .q7-btn-group {
+        margin-top: 4px;
+      }
+
+      > .q7-btn-group > .q7-btn-item {
+        flex-grow: 1
+      }
+    }
+  }
+
+  > img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    border: 0;
+  }
+}

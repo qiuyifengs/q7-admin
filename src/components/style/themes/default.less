@@ -1,0 +1,143 @@
+@theme: default;
+@q7-prefix: q7;
+
+@html-selector: html;
+
+// -------- Colors -----------
+@primary-color: #1890ff;
+@info-color: rgba(0,0,0,.45);
+@success-color: #52c41a;
+@processing-color: #1890ff;
+@error-color: #ff4d4f;
+@highlight-color: #ff4d4f;
+@warning-color: #faad14;
+@normal-color: #d9d9d9;
+@white: #fff;
+@black: #000;
+@orange: #ff9800;
+
+@red: #f44336;
+@grey: #9e9e9e;
+@secondary: #26A69A;
+
+// Background color for `<body>`
+@body-background: #fff;
+// Base background color for most components
+@component-background: #fff;
+@font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB',
+  'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+  'Segoe UI Emoji', 'Segoe UI Symbol';
+
+@typography-font-family: 'Roboto', '-apple-system', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+@code-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+@text-color: fade(@black, 65%);
+@text-color-secondary: fade(@black, 45%);
+@text-color-inverse: @white;
+@icon-color: inherit;
+@icon-color-hover: fade(@black, 75%);
+@heading-color: fade(#000, 85%);
+@heading-color-dark: fade(@white, 100%);
+@text-color-dark: fade(@white, 85%);
+@text-color-secondary-dark: fade(@white, 65%);
+@text-selection-bg: @primary-color;
+@font-variant-base: tabular-nums;
+@font-feature-settings-base: 'tnum';
+@font-size-base: 14px;
+@font-size-lg: @font-size-base + 2px;
+@font-size-sm: 12px;
+@heading-1-size: ceil(@font-size-base * 2.71);
+@heading-2-size: ceil(@font-size-base * 2.14);
+@heading-3-size: ceil(@font-size-base * 1.71);
+@heading-4-size: ceil(@font-size-base * 1.42);
+@line-height-base: 1.5715;
+@border-radius-base: 2px;
+@border-radius-sm: @border-radius-base;
+
+// vertical paddings
+@padding-lg: 24px; // containers
+@padding-md: 16px; // small containers and buttons
+@padding-sm: 12px; // Form controls and items
+@padding-xs: 8px; // small items
+
+// ICONFONT
+@iconfont-css-prefix: q7icon;
+
+// LINK
+@link-color: @primary-color;
+@link-decoration: none;
+@link-hover-decoration: none;
+
+// Statistic
+// ---
+@statistic-title-font-size: @font-size-base;
+@statistic-content-font-size: 24px;
+@statistic-unit-font-size: 16px;
+@statistic-font-family: @font-family;
+
+// Animation
+@ease-base-out: cubic-bezier(0.7, 0.3, 0.1, 1);
+@ease-base-in: cubic-bezier(0.9, 0, 0.3, 0.7);
+@ease-out: cubic-bezier(0.215, 0.61, 0.355, 1);
+@ease-in: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+@ease-in-out: cubic-bezier(0.645, 0.045, 0.355, 1);
+@ease-out-back: cubic-bezier(0.12, 0.4, 0.29, 1.46);
+@ease-in-back: cubic-bezier(0.71, -0.46, 0.88, 0.6);
+@ease-in-out-back: cubic-bezier(0.71, -0.46, 0.29, 1.46);
+@ease-out-circ: cubic-bezier(0.08, 0.82, 0.17, 1);
+@ease-in-circ: cubic-bezier(0.6, 0.04, 0.98, 0.34);
+@ease-in-out-circ: cubic-bezier(0.78, 0.14, 0.15, 0.86);
+@ease-out-quint: cubic-bezier(0.23, 1, 0.32, 1);
+@ease-in-quint: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+@ease-in-out-quint: cubic-bezier(0.86, 0, 0.07, 1);
+
+// Border color
+@border-color-base: hsv(0, 0, 85%); // base border outline a component
+@border-color-split: hsv(0, 0, 94%); // split border inside a component
+@border-color-inverse: @white;
+@border-width-base: 1px; // width of the border for a component
+@border-style-base: solid; // style of a components border
+
+// Descriptions
+@descriptions-bg: #fafafa;
+@descriptions-title-margin-bottom: 20px;
+@descriptions-default-padding: @padding-md @padding-lg;
+@descriptions-middle-padding: @padding-sm @padding-lg;
+@descriptions-small-padding: @padding-xs @padding-md;
+@descriptions-item-padding-bottom: @padding-md;
+@descriptions-item-trailing-colon: true;
+@descriptions-item-label-colon-margin-right: 8px;
+@descriptions-item-label-colon-margin-left: 2px;
+@descriptions-extra-color: @text-color;
+
+// Empty
+@empty-font-size: @font-size-base;
+
+// Layout
+@layout-border: 1px solid @border-color-base;
+@layout-shadow: 0 0 10px 2px rgba(0,0,0,0.2), 0 0px 10px rgba(0,0,0,0.24);
+
+@z-side: 1000;
+@z-marginals: 2000;
+@z-fixed-drawer: 3000;
+@z-fullscreen: 6000;
+@z-tooltip: 9000;
+
+@toolbar-min-height: 50px;
+@toolbar-padding: 0 12px;
+@toolbar-inset-size: 58px;
+@toolbar-title-font-size: 21px;
+@toolbar-title-font-weight: normal;
+@toolbar-title-letter-spacing: .01em;
+@toolbar-title-padding: 0 12px;
+
+@img-width: 100%;
+@img-background-repeat: no-repeat;
+@img-loading-font-size: 50px;
+@img-content-position: absolute;
+@img-content-padding: 16px;
+@img-content-color: #fff;
+@img-content-background: rgba(0, 0, 0, .47);
+
+@checkbox-transition: .22s cubic-bezier(0,0,.2,1) 0ms;
+
+@separator-color: rgba(0, 0, 0, .12);
